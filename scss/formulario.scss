@@ -1,0 +1,53 @@
+.formulario {
+    max-width: 500px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .error {
+        border: 1px solid red;
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+    input[type="text"],
+    input[type="file"],
+    textarea {
+        width: 100%;
+        margin-bottom: 30px;
+        color: #fff;
+    }
+    input[type="text"],
+    textarea {
+        padding: 10px;
+        background: none;
+        font-family: "Slabo 27px", serif;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    textarea {
+        min-height: 76px;
+        max-height: 150px;
+        min-width: 100%;
+        max-width: 100%;
+        &:focus {
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+    }
+    .submit {
+        display: inline-block;
+        text-align: center;
+        color: #fff;
+        padding: 15px 20px;
+        border-radius: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: none;
+        transition: all 0.3s ease;
+        outline: none;
+        cursor: pointer;
+        &:hover {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    }
+}

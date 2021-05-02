@@ -1,0 +1,25 @@
+.fotos {
+    .contenedor {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .thumb {
+            width: 22%;
+            margin-bottom: 30px;
+            outline: 5px solid rgba(255, 255, 255, 0);
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+            transition: all 0.3s ease;
+            &:hover {
+                outline: 3px solid rgba(255, 255, 255, 1);
+            }
+            a {
+                display: block;
+                img {
+                    vertical-align: top;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
